@@ -7,7 +7,8 @@ app = FastAPI(title="ML Studio Backend")
 
 # ✅ CORS configuration
 origins = [
-    "http://localhost:3000",  # React dev server origin
+    "http://localhost:3000",           # React dev server
+    "https://your-netlify-site.netlify.app"  # ✅ Add your Netlify domain here
 ]
 
 app.add_middleware(
@@ -27,3 +28,10 @@ app.include_router(chatbot.router, prefix="/chatbot", tags=["chatbot"])
 @app.get("/")
 def root():
     return {"service": "ML Studio Backend", "status": "ok"}
+
+# ✅ Uvicorn entry point for local dev & Render
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))  # Render will set $PORT
+    # reload=True is useful locally, but you can set it to False in production
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
