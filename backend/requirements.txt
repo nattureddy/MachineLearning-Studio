@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+aiofiles
+pandas
+openpyxl      # for reading .xlsx files
+python-dotenv
+firebase-admin  # optional, only if you want to verify Firebase tokens
+matplotlib
+seaborn
+
