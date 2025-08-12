@@ -7,9 +7,9 @@ import ModelEvaluation from '../learning/ModelEvaluation';
 import UnsupervisedLearning from '../learning/UnsupervisedLearning';
 import FeatureEngineering from '../learning/FeatureEngineering';
 import AdvancedTopics from '../learning/AdvancedTopics';
-import NeuralNetworks from '../learning/NeuralNetworks'
-import EndToEndWorkflow from '../learning/EndToEndWorkflow'
-import RealWorldProjects from '../learning/RealWorldProjects'
+import NeuralNetworks from '../learning/NeuralNetworks';
+import EndToEndWorkflow from '../learning/EndToEndWorkflow';
+import RealWorldProjects from '../learning/RealWorldProjects';
 
 const topics = [
   { id: 'foundations', name: 'Foundations' },
