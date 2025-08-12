@@ -8,7 +8,7 @@ app = FastAPI(title="ML Studio Backend")
 # ✅ CORS configuration
 origins = [
     "http://localhost:3000",           # React dev server
-    "https://machinelearningstudio.netlify.app/"  # ✅ Add your Netlify domain here
+    "https://machinelearningstudio.netlify.app"  # ✅ Add your Netlify domain here
 ]
 
 app.add_middleware(
