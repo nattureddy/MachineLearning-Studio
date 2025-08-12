@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { auth } from "../firebase";
 
-const API_BASE = "http://localhost:8000"; // adjust if needed
+const API_BASE = "https://machinelearning-studio-1.onrender.com"; // adjust if needed
 
 const PredictionStudio = () => {
   const [modelList, setModelList] = useState([]);

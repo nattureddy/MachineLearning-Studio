@@ -43,7 +43,7 @@ const Dashboard = () => {
       setLoadingDatasets(true);
       setErrorDatasets("");
       const headers = await getAuthHeaders();
-      const resp = await axios.get("http://localhost:8000/datasets", { headers });
+      const resp = await axios.get("https://machinelearning-studio-1.onrender.com/datasets", { headers });
       setDatasets(resp.data.datasets || []);
     } catch (err) {
       setErrorDatasets("Failed to load datasets.");
@@ -57,7 +57,7 @@ const Dashboard = () => {
       setLoadingModels(true);
       setErrorModels("");
       const headers = await getAuthHeaders();
-      const resp = await axios.get("http://localhost:8000/model/saved", { headers });
+      const resp = await axios.get("https://machinelearning-studio-1.onrender.com/model/saved", { headers });
       const modelsWithMetrics = (resp.data.models || []).map((m) => ({
         id: m.id,
         name: m.name,
@@ -77,7 +77,7 @@ const Dashboard = () => {
       setLoadingModels(false);
     }
   };
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchDatasets();
     fetchModels();

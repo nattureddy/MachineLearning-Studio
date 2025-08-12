@@ -3,7 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import { auth } from "../firebase";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://machinelearning-studio-1.onrender.com";
 
 const EDAStudio = () => {
   const [datasets, setDatasets] = useState([]);

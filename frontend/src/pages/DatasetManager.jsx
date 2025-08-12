@@ -3,7 +3,7 @@ import axios from "axios";
 import { auth } from "../firebase";
 import { motion } from "framer-motion";
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://machinelearning-studio-1.onrender.com";
 
 const Card = ({ title, children, icon }) => (
   <motion.div

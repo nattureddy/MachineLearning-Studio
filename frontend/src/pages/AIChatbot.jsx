@@ -256,7 +256,7 @@ const AIChatbot = () => {
 
     try {
       setStatus("Connected");
-      const response = await fetch('http://localhost:8000/chatbot/chat', {
+      const response = await fetch('https://machinelearning-studio-1.onrender.com/chatbot/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ chatHistory: updatedChatHistory }),
