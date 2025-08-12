@@ -150,12 +150,12 @@ const EDAStudio = () => {
     </div>
   );
 
-  const SectionTitle = ({ title, icon }) => (
-    <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-      {icon && <span className="mr-2 text-blue-500">{icon}</span>}
-      {title}
-    </h2>
-  );
+  // const SectionTitle = ({ title, icon }) => (
+  //   <h2 className="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+  //     {icon && <span className="mr-2 text-blue-500">{icon}</span>}
+  //     {title}
+  //   </h2>
+  // );
   
   const loadingSpinner = (
     <div className="flex justify-center items-center py-8">
